@@ -6,56 +6,61 @@
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <div class="wrapper">
-  <div class="content">
-    <div class="header">
-      <nav class="menu">
+    <div class="content">
+    <header>
+      <div class="header_content">
         <div class="logo">
           <a href="#" class="logo_a"><img src="./images/logo.jpg" alt="Rectangle"></a>
         </div>
-        <div class="header_menu">
-          <li><a href="#">Become a host</a></li>
-          <li><a href="#">Trips</a></li>
-          <li><a href="#">Messages</a></li>
-          <li><a href="#" class="img_header_menu"><img src="./images/menu_img.jpg" alt="Ellipse"></a></li>
+        <div class="header_nav_bar">
+          <nav class="header_menu">
+            <ul>
+              <li><a href="#" class="header_menu_a">Become a host</a></li>
+              <li><a href="#" class="header_menu_a">Trips</a></li>
+              <li><a href="#" class="header_menu_a">Messages</a></li>
+            </ul>
+          </nav>
+          <div class="avatar">
+            <a href="#" class="avatar_img"><img src="./images/menu_img.jpg" alt="Avatar" ></a>
+          </div>
         </div>
-      </nav>
+      </div>
       <div class="header_img"></div>
-    </div>
-    <div class="main">
+    </header>
+    <main>
       <div class="container">
         <div class="apartment_info">
           <div class="quiet_apartment">
-            <span class="quiet_apartment_headline">Quiet apartment</span><br>
-            <span class="entire_apartment">Entire apartment</span><br>
-            <span class="entire_apartment_description">4 guests 1 bed  1 bath</span><br>
-            <span class="quiet_apartment_text">
-              City Apartment is newly renovated in the heart of Budapest, right in <br>
-              the city center. Lorem ipsum dolor sit amet, consectetur adipisicing <br>
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna <br>
+            <p class="quiet_apartment_headline">Quiet apartment</p>
+            <p class="entire_apartment">Entire apartment</p>
+            <p class="entire_apartment_description"><span>4 guests</span><span>1 bed</span><span>1 bath</span></p>
+            <p class="quiet_apartment_text">
+              City Apartment is newly renovated in the heart of Budapest, right in
+              the city center. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
               aliqua. Ut enim ad minim veniam.
-            </span><br>
-            <span class="quiet_apartment_contact"><a href="#" class="quiet_apartment_contact_a">Contact host</a></span>
+            </p><br>
+            <p class="quiet_apartment_contact"><a href="#" class="quiet_apartment_contact_a">Contact host</a></p>
           </div>
           <div class="order_form">
             <div class="form_container">
               <span class="price">25$ per night</span>
-              <form>
-                <label><input type="text" class="date" placeholder="Date"></label>
-                <label><input type="text" class="guests" placeholder="Guests"></label>
+              <form action="" method="post">
+                <label><input type="text" class="date" placeholder="Date" name="date"></label>
+                <label><input type="text" class="guests" placeholder="Guests" name="guests"></label>
                 <input type="submit" value="Book" class="form_button">
               </form>
             </div>
           </div>
           <div class="amenities">
-            <span class="amenities_headline">Amenities</span>
+            <p class="amenities_headline">Amenities</p>
             <div class="service_list">
               <span>Elevator</span>
               <span>Hair dryer</span>
               <span>Washer</span>
               <span>Kitchen</span>
             </div>
-            <span class="show"><a href="#" class="show_a">Show All Amenities</a></span>
+            <p class="show"><a href="#" class="show_a">Show All Amenities</a></p>
           </div>
         </div>
         <section class="reviews_block">
@@ -87,7 +92,7 @@
           <a href="#" class="host_contact">Contact Host</a>
         </section>
       </div>
-    </div>
+    </main>
   </div>
   <footer>
     <div class="footer_container">
@@ -111,7 +116,6 @@
       </div>
     </div>
   </footer>
-</div>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
